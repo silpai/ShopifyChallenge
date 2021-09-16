@@ -137,7 +137,7 @@ daily_margin<- TAB_montly_AOV %>%
   theme_economist()+
   labs(title = 'AOV Margins',
        subtitle= "Daily AOV - Monthly AOV",
-       caption='Source: Spotify'
+       caption='Source: Shopify'
   )+
   
   scale_fill_manual(values=c("steelblue","firebrick1")) +
@@ -214,7 +214,7 @@ con_AOV_user_per_shop %>% ggplot(aes(x = Var1, weight = Prop)) +
   theme_economist() +
   labs(title = 'User Class Analysis',
        subtitle= "User Class % per each store",
-       caption='Source: Spotify', 
+       caption='Source: Shopify', 
        x='', y='')+
   theme(plot.title = element_text(family = 'Avenir Next Condensed', hjust=0,size=18,margin=margin(-7,0,10,0)),
         plot.subtitle = element_text(family = 'Avenir Next Condensed',size=12, margin=margin(-5,-1,3,0)),
@@ -270,7 +270,7 @@ con_AOV_user_per_ALL_shop %>% ggplot(aes(x = Var1, weight = Prop)) +
   theme_economist() +
   labs(title = 'User Class Analysis',
        subtitle= "User Class % per overall stores",
-       caption='Source: Spotify', 
+       caption='Source: Shopify', 
        x='', y='')+
   theme(plot.title = element_text(family = 'Avenir Next Condensed', hjust=0,size=18,margin=margin(-7,0,10,0)),
         plot.subtitle = element_text(family = 'Avenir Next Condensed',size=12, margin=margin(-5,-1,3,0)),
